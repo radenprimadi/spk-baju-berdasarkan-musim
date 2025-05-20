@@ -75,7 +75,7 @@ class EnhancedFuzzyOutfitRecommender {
             (x - a)/(b - a), 
             1, 
             (d - x)/(d - c)
-        );
+        ));
     }
 
     triangularMF(a, b, c) {
