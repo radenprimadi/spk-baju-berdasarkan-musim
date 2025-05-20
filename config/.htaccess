@@ -1,0 +1,15 @@
+# Blok akses langsung ke file tertentu
+<FilesMatch "\.(env|log|sql)$">
+    Deny from all
+</FilesMatch>
+
+# Redirect semua request ke index.php
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^ index.php [L]
+</IfModule>
+
+# Nonaktifkan directory listing
+Options -Indexes

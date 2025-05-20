@@ -1,0 +1,23 @@
+# ===================
+# Umum
+# ===================
+*.log
+.env
+.DS_Store
+
+# ===================
+# Node.js / Express
+# ===================
+node_modules/
+uploads/
+
+# ===================
+# React / Vite / Next.js
+# ===================
+dist/
+build/
+.client/
+.next/
+out/
+.vscode/
+.idea/
